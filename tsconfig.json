@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "rootDir": "src",
+        "outDir": "build"
+    },
+    "filesGlob": [
+        "typings/index.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "node_modules/typescript/lib/lib.es6.d.ts"
+    ],
+    "typeRoots": [
+        "node_modules/@types"
+    ],
+    "types": [
+        "express", "mongoose", "morgan", "body-parser", "compression", "helmet"
+    ],
+    "exclude":[
+        "build", 
+        "node_modules"
+    ]
+}
